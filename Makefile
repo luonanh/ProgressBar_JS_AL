@@ -5,7 +5,7 @@ BIN=progbar
 all: $(BIN)
 
 %: %.c
-	$(CC) $(CFLAGS) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $< -lcurl
 
 clean:
 	$(RM) -r $(BIN) *.o *.dSYM
